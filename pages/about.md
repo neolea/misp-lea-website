@@ -1,14 +1,13 @@
 ---
 layout: page
 title: About
+subtitle: "Empowering Law Enforcement Agencies with MISP: Enhancing Information Sharing and Investigation"
 permalink: /about/
 feature-img: "assets/img/pexels/travel.jpeg"
 tags: [Page]
 ---
 
-Type on Strap is based on Type Theme, a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+MISP-LEA project started the first June 2023. It consists in an law enforcement agency information sharing community. It's powered by [MISP](https://www.misp-project.org/) and [AIL project](https://www.ail-project.org/), two leading open source projects led by [CIRCL](https://www.circl.lu/).
 
-Head over to the [theme's documentation](https://github.io/sylhare/Type-on-Strap) for much more information about Type on Strap or to install this theme on your own Jekyll site.
+MISP, the leading open source project for threat intelligence and information sharing, is used by different actors in the cyber security field including CERTs/CSIRTs, SOCs and law enforcement agencies. MISP is used in different use-cases ranging from investigation, remediation, reporting and cross-border collaboration. Within this project a MISP instance is set up dedicated for law enforcement agencies. The instance is fed with threat intelligence data from CIRCL and Shadowserver. The intelligence provided includes threat intelligence from CSIRT/CERTs networks, OSINT networks and non-governmental organisations. Training for law enforcement agencies is provided by CIRCL and Shadowserver. The MISP instance is hosted during the project at CIRCL and hosting will be continued after the project at CIRCL in a global sustainability program for law enforcement MISP communities. The project will serve as ground for having an EU-based open source software stack for information sharing in law enforcement agencies. MISP-LEA provides an efficient open source tool along with the intelligence to support pre-investigation to enhance crime reporting. This project is carried out by CIRCL and SHADOWSERVER. CIRCL is the coordinator.
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
- 
