@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MISP-LEA kickoff meeting 
-tags: [Katex, Mermaid, Markdown]
+tags: [News]
 categories: news 
 ---
 

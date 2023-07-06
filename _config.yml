@@ -3,9 +3,9 @@ baseurl: "/"
 url: "https://misp-lea.org"
 
 # THEME-SPECIFIC CONFIGURATION
-title: MISP-LEA                                   # site's title
-description: "Empowering Law Enforcement Agencies with MISP: Enhancing Information Sharing and Investigation"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
+title: "Information Sharing for Law Enforcement"                               # site's title
+description: "MISP-LEA - Empowering Law Enforcement Agencies with MISP: Enhancing Information Sharing and Investigation"      # used by search engines
+avatar: assets/img/misp-lea.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
@@ -27,7 +27,7 @@ katex: true                                             # Enable if using math m
 mermaid: default                                        # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
 google_analytics:                                       # Tracking ID, e.g. "UA-000000-01"
 cookie_consent: false                                   # To respect the usage of cookies
-color_theme: dark                                       # auto, dark or light
+color_theme: light                                  # auto, dark or light
 
 # Comments
 comments:
