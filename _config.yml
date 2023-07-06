@@ -13,7 +13,8 @@ header_text: "Empowering Law Enforcement Agencies with MISP: Enhancing Informati
 header_feature_image: assets/img/header/triangular.jpeg
 header_feature_image_responsive: true
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+  Copyright 2023 - CIRCL Computer Incident Response Center Luxembourg <br/>
+  <img style="width: 50%;max-height: 50%" src="/assets/img/eu_funded_en.jpg" alt="Cofunded by EU">
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
