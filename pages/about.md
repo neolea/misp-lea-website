@@ -7,7 +7,7 @@ feature-img: "assets/img/pexels/travel.jpeg"
 tags: [Page]
 ---
 
-MISP-LEA project started the first June 2023. It consists in an law enforcement agency information sharing community. It's powered by [MISP](https://www.misp-project.org/) and [AIL project](https://www.ail-project.org/), two leading open source projects led by [CIRCL](https://www.circl.lu/).
+MISP-LEA project started the first June 2023. It consists in an law enforcement agency information sharing community. It's powered by [MISP](https://www.misp-project.org/)[^1] and [AIL project](https://www.ail-project.org/)[^2], two leading open source projects led by [CIRCL](https://www.circl.lu/).
 
 # Background
 
@@ -21,3 +21,6 @@ The MISP instance is hosted during the project at CIRCL and hosting will be cont
 
 [![Shadowserver logo](/assets/img/logo-shadowserver.svg)](https://www.shadowserver.org/)
 [![CIRCL logo](/assets/img/circl-logo.png)](https://www.circl.lu/)
+
+[^1]: MISP is an open source threat intelligence and sharing platform. MISP is a complete platform and standard to collect, structure, model intelligence such as threat intelligene, cyberecurity intelligence, financial fraud, vulnerability information... 
+[^2]: AIL Project is an open source framework to collect, crawl, dig and analyse unstructured data from different source including Tor. The framework can be used to find information leaks, intelligence, insights and much more.
