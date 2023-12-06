@@ -36,7 +36,7 @@ Location in [OpenStreetMap](https://www.openstreetmap.org/node/9602536302).
 
 | Start | End   | Speaker             | Title                       |
 |-------|-------|  -------------------|-----------------------------|
-| 10:00 | 10:00 | Gerard Wagener      | Welcome and opening         |
+| 10:00 | 10:14 | Gerard Wagener      | Welcome and opening         |
 | 10:15 | 12:15 | Sami Mokaddem       | MISP capabilities for law enforcement |
 | 12:00 | 13:00 |                     | Break                       |
 | 13:00 | 13:45 | Alexandre Dulaunoy  | MISP-LEA AIL capabilities and access for the MISP-LEA community |
