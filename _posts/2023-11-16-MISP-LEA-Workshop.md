@@ -37,8 +37,8 @@ Location in [OpenStreetMap](https://www.openstreetmap.org/node/9602536302).
 | Start | End   | Speaker             | Title                       |
 |-------|-------|  -------------------|-----------------------------|
 | 10:00 | 10:00 | Gerard Wagener      | Welcome and opening         |
-| 10:15 | 12:15 | Sami Mokaddem       | MISP capabilities for law enforcement       |
+| 10:15 | 12:15 | Sami Mokaddem       | MISP capabilities for law enforcement |
 | 12:00 | 13:00 |                     | Break                       |
-| 13:00 | 13:45 | Alexandre Dulaunoy  | MISP-LEA AIL capabilities   |
-| 13:45 | 14:15 | Jean-Louis Huynen   | BloomFilters - sharing sensitive selectors       |
+| 13:00 | 13:45 | Alexandre Dulaunoy  | MISP-LEA AIL capabilities and access for the MISP-LEA community |
+| 13:45 | 14:15 | Jean-Louis Huynen and Alexandre Dulaunoy   | BloomFilters - sharing sensitive selectors with [PSS](https://github.com/hashlookup/private-search-set)    |
 | 14:15 | 16:00 | Gerard Wagener      | Gathering session: Improving MISP-LEA community based on MISP-LEA intelligence practices. |
