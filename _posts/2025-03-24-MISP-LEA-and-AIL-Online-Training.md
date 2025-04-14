@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Half-Day Training Session in Luxembourg on MISP-LEA Infrastructure for LEA - Thursday, 22nd May 2025"
+title:  "Half-Day Training Session (Online) on MISP-LEA Infrastructure for LEA - Thursday, 22nd May 2025"
 author: Alexandre Dulaunoy 
 tags: [News]
 categories: news 
