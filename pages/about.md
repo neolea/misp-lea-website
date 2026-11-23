@@ -28,6 +28,8 @@ MISP-LEA’s original co-funding period under the European Union’s Internal Se
 
 MISP-LEA is now part of the [HOPLITE project](https://hoplite-project.eu/) and receives co-funding through it.
 
+<a href="https://hoplite-project.eu/"><img src="{{ '/assets/img/hoplite-shield.webp' | relative_url }}" alt="HOPLITE project logo" width="240" height="150"></a>
+
 MISP-LEA helps law enforcement agencies establish information-sharing practices and connects them with other sharing communities. CIRCL promotes MISP-LEA within its existing communities, including ISACs, so they can share information with law enforcement agencies in real time.
 
 
