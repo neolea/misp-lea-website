@@ -29,29 +29,31 @@ $x-sm-break: 320px;
 
 /* THEME COLOR SCHEMES */
 html, html[data-theme="light"] {
-  --background: #ffffff;
-  --blockquote: #eef7fa;
-  --selection: #d4d4d4;
-  --meta: #595959;
-  --link: #0072B5;
+  --background: #f4f7fa;
+  --surface: #ffffff;
+  --blockquote: #eaf2f8;
+  --selection: #cddfeb;
+  --meta: #526377;
+  --link: #145880;
   --header-background: #24292e;
   --header-text: #ffffff;
-  --header-link: #383838;
+  --header-link: #30465d;
   --code-background: #E0E0E0;
   --code-inline: #24292e;
   --text-shadow: #3f3f3f;
-  --text: #262626;
-  --h1: #262626;
-  --h2: #262626;
-  --h3: #262626;
-  --h4: #262626;
-  --h5: #262626;
-  --h6: #262626;
-  --border: rgba(0, 0, 0, 0.2);
+  --text: #182f45;
+  --h1: var(--text);
+  --h2: var(--text);
+  --h3: var(--text);
+  --h4: var(--text);
+  --h5: var(--text);
+  --h6: var(--text);
+  --border: #dce5ed;
 }
 
 html[data-theme="dark"] {
   --background: #22272e; // brand, background
+  --surface: #2a3444;
   --blockquote: #373e47; // blockquote
   --selection: #545d68; // selection
   --meta: #909dab; // meta

@@ -1,45 +1,30 @@
 <header class="site-header">
+    <div class="site-header-inner">
+        <a class="site-title" href="{{ '/' | relative_url }}">
+            {% if site.avatar %}
+            <img alt="" class="avatar" src="{{ site.avatar | relative_url }}" width="48" height="48">
+            {% endif %}
+            <span>{{ site.title }}</span>
+        </a>
 
-    <!-- Logo and title -->
-	<div class="branding">
-        {% if site.avatar %}
-		<a href="{{ '/' | relative_url }}">
-			<img alt="logo img" class="avatar" src="{{ site.avatar | relative_url }}" loading="lazy"/>
-		</a>
-        {% endif %}
-        <a class="site-title" aria-label="{{ site.title }}" href="{{ '/' | relative_url }}">
-        {{ site.title }}
-		</a>
-	</div>
-
-    <!-- Toggle menu -->
-    <nav class="clear">
-    <a aria-label="pull" id="pull" class="toggle" href="#">
-    <i class="fas fa-bars fa-lg"></i>
-    </a>
-
-    <!-- Menu -->
-    <ul class="hide">
-        {% assign name_page = "" %}
-
-        {% for page in site.pages %}
-            {% unless page.title == null or page.hide or name_page contains page.title %}
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="{{ page.title }}" title="{{ page.title }}" href="{{ page.url | relative_url }}">
-                    {% if page.icon %} <i class="fas {{ page.icon }}" aria-hidden="true"></i>
-                    {% else %} {{ page.title }} {% endif%}
-                </a>
-            </li>
-            {% endunless %}
-            {% assign name_page = page.title | append: name_page %}
-        {% endfor %}
-
-        {% if site.color_theme == 'auto' %}
-        <li class="separator"> | </li>
-        <li><a id="theme-toggle" title="{{ page.title }} " aria-label="{{ page.title }}" onclick="themeToggle()"></a></li>
-        {% endif %}
-    </ul>
-
-	</nav>
+        <nav class="site-navigation" aria-label="Primary">
+            <ul>
+                {% assign linked_titles = "" | split: "," %}
+                {% for nav_page in site.pages %}
+                    {% unless nav_page.title == null or nav_page.hide or linked_titles contains nav_page.title %}
+                    <li>
+                        <a href="{{ nav_page.url | relative_url }}"{% if page.url == nav_page.url %} aria-current="page"{% endif %}{% if nav_page.icon %} aria-label="{{ nav_page.title }}"{% endif %}>
+                            {% if nav_page.icon %}<i class="fas {{ nav_page.icon }}" aria-hidden="true"></i>
+                            {% else %}{{ nav_page.title }}{% endif %}
+                        </a>
+                    </li>
+                    {% assign linked_titles = linked_titles | push: nav_page.title %}
+                    {% endunless %}
+                {% endfor %}
+                {% if site.color_theme == 'auto' %}
+                <li><a id="theme-toggle" href="#" aria-label="Switch color theme" onclick="themeToggle(); return false;"></a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
 </header>

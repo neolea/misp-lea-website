@@ -1,101 +1,101 @@
-/* --- Header text feature --- */
-.call-out {
-  @extend %padding-header;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  font-size: 1.2em;
-  text-align: center;
-  color: var(--header-text);
-  background: no-repeat var(--header-background);
-  backdrop-filter: brightness(0.5);
-  background-size: cover;
+.home-hero {
+  color: #fff;
+  background-color: #102942;
+  background-image: linear-gradient(90deg, #102942 36%, rgba(#102942, 0.2)), var(--hero-image, none);
+  background-position: center, right 45%;
+  background-repeat: no-repeat;
+  background-size: cover, clamp(600px, 65%, 100%) auto;
+}
+
+.home-hero-inner {
+  @extend %site-frame;
+  display: flex;
+  align-items: center;
+  min-height: 24rem;
+  padding-block: clamp(2.75rem, 6vw, 4.5rem);
 
   h1 {
-    font-family: $font-family-logo;
-    @extend .subtle-txt-shadow;
-  }
-
-  /* --- Responsive --- */
-  @media screen and (max-width: $m-break) {
-    background-size: 170% auto;
-  }
-
-  @media screen and (max-width: 450px) {
-    background-size: 200% auto;
-  }
-
-  @media screen and (max-width: 400px) {
-    background-size: 250% auto;
-  }
-
-  @media screen and (max-width: 380px) {
-    background-size: 280% auto;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
+    max-width: 23ch;
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.06;
+    text-wrap: balance;
   }
 }
 
-#main {
-  background-position: 100% -50px, 0 center, center top;
-}
-
-/* --- Post listing --- */
 .posts {
-  .post-teaser {
-    @extend %padding-post;
-    width: 100%;
-    margin-bottom: 0;
-    display: inline-block;
-    background-size: cover;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  @extend %site-frame;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding-block: clamp(1.5rem, 4vw, 3.5rem) 0;
+}
 
-    p a {
-      @extend .body-link;
-    }
+.post-teaser {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
 
-    .post-img {
-      vertical-align: middle;
-      border-radius: 10px;
-      overflow: hidden;
+  h2 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.375rem, 2.15vw, 1.75rem);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
 
-      @media (min-width: $break) {
-        height: 250px;
-      }
-
-      //Smaller screen
-      @media screen and (max-width: $break) {
-        height: 150px;
-      }
-
-      img {
-        width: 100%;
-        padding: 0;
-        vertical-align: middle;
-      }
-
-    }
-
-    .post-img img {
-      -moz-transition-timing-function: ease-out;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-
-      -moz-transition: all 2s;
-      -webkit-transition: all 2s;
-      transition: all 2s;
-
-      &:hover {
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-      }
-    }
+  .post-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
   }
 
   .excerpt {
-    margin-top: 1em;
+    color: var(--meta);
+    font-size: 1.0625rem;
+    line-height: 1.55;
+  }
+
+  .post-img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.375rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 761px) {
+  .post-teaser:first-child {
+    grid-column: 1 / -1;
+    border-top: 3px solid var(--link);
+
+    h2 {
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+    }
+
+    .excerpt {
+      max-width: 72ch;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .home-hero {
+    background-image: linear-gradient(90deg, #102942, rgba(#102942, 0.72)), var(--hero-image, none);
+    background-size: cover;
+  }
+
+  .home-hero-inner {
+    min-height: 17rem;
+  }
+
+  .posts {
+    grid-template-columns: 1fr;
   }
 }
