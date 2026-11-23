@@ -22,7 +22,9 @@ MISP, the leading open source project for threat intelligence and information sh
 
 # Who is behind?
 
-CIRCL sustains the hosted platform through its long-term program for law enforcement information sharing. The project will serve as ground for having an EU-based open source software stack for information sharing in law enforcement agencies. MISP-LEA provides an efficient open source tool along with the intelligence to support pre-investigation to enhance crime reporting. This project is carried out by [CIRCL](https://www.circl.lu/) and [SHADOWSERVER](https://www.shadowserver.org/). CIRCL is the coordinator.
+[CIRCL](https://www.circl.lu/) coordinates MISP-LEA and continues to host, operate, maintain, and develop the platform, including the dedicated MISP and AIL Project instances. CIRCL works with [The Shadowserver Foundation](https://www.shadowserver.org/) to provide an EU-based open source platform for threat intelligence sharing, investigations, and crime reporting.
+
+MISP-LEA’s original co-funding period under the European Union’s Internal Security Fund (ISF) ended on 31 May 2025. The platform continues through CIRCL’s long-term sustainability program for law enforcement information sharing, supported by national funding and complementary co-funding through the [HOPLITE project](https://hoplite-project.eu/).
 
 [![Shadowserver logo](/assets/img/logo-shadowserver.svg)](https://www.shadowserver.org/)
 [![CIRCL logo](/assets/img/circl-logo.png)](https://www.circl.lu/)
@@ -41,9 +43,10 @@ As part of MISP-LEA, technical advice and software on setting up MISP in air-gap
 
 No worries. You can connect to MISP-LEA, download the relevant data you are interested in either via the web interface or the API, and use it in other forensic tools.
 
-## Do you plan to maintain the MISP-LEA after the end of the EU funding? 
+## Who maintains MISP-LEA now that the original EU funding period has ended?
+{: #do-you-plan-to-maintain-the-misp-lea-after-the-end-of-the-eu-funding }
 
-**Although the MISP-LEA project is co-funded by the European Union, with funding ending on 31/5/2025, CIRCL will continue the maintenance, operation and development of the MISP-LEA platform**. Post-project, the upkeep of this equipment will transition to a global sustainability program led by CIRCL. This equipment will be utilized to host a dedicated MISP instance for the Law Enforcement Agency (LEA) community. The primary objective of the project is to bootstrap the community and initiate to information sharing practices. CIRCL will actively promote MISP-LEA within their existing sharing communities, such as ISACs, providing them with the opportunity for real-time data sharing with LEA. MISP-LEA serves as a sharing hub connecting various sharing communities with LEA organizations.
+CIRCL continues to maintain MISP-LEA. See [Who is behind MISP-LEA?](#who-is-behind) for current funding and hosting details. Through MISP-LEA, CIRCL connects law enforcement agencies with established information-sharing communities, including ISACs, so they can share information in real time.
 
 [^1]: MISP is an open source threat intelligence and sharing platform. MISP is a complete platform and standard to collect, structure, model intelligence such as threat intelligene, cyberecurity intelligence, financial fraud, vulnerability information, digital forensic investigations... 
 [^2]: AIL Project is an open source framework to collect, crawl, dig and analyse unstructured data from different source including Tor. The framework can be used to find information leaks, intelligence, insights and much more.
