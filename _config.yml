@@ -16,6 +16,10 @@ footer_copyright_start_year: 2023
 footer_text: >
   CIRCL Computer Incident Response Center Luxembourg <br/>
   <img style="width: 50%;max-height: 50%" src="/assets/img/eu_funded_en.jpg" alt="Cofunded by EU">
+footer_disclaimer: >-
+  Funded by the European Union. Views and opinions expressed are however those of the author(s) only
+  and do not necessarily reflect those of the European Union or DG HOME. Neither the European Union
+  nor the granting authority can be held responsible for them.
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
