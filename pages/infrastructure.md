@@ -13,9 +13,36 @@ MISP-LEA combines hosted [MISP](https://www.misp-project.org/)[^1] and [AIL Proj
 
 MISP, the leading open source project for threat intelligence and information sharing, is used by different actors in the cyber security field including CERTs/CSIRTs, SOCs and law enforcement agencies. MISP is used in different use-cases ranging from investigation, remediation, reporting and cross-border collaboration. Within this project a MISP instance is set up dedicated for law enforcement agencies. The instance is fed with threat intelligence data from CIRCL and Shadowserver. The intelligence provided includes threat intelligence from CSIRT/CERTs networks, OSINT networks, non-governmental organisations and other LEA. Training for law enforcement agencies is provided by CIRCL and Shadowserver.
 
-![](/assets/img/header/bar.png)
-
 ## Infrastructure
+
+<figure class="infrastructure-diagram" role="img" aria-label="Law enforcement users access the MISP-LEA platform, which contains interconnected MISP and AIL Project instances.">
+<div class="mermaid">
+%%{init: {
+    "theme": "base",
+    "flowchart": {"htmlLabels": false, "curve": "linear", "rankSpacing": 40},
+    "themeVariables": {
+        "fontFamily": "Source Sans Pro, sans-serif",
+        "fontSize": "18px",
+        "lineColor": "#466680",
+        "edgeLabelBackground": "#ffffff"
+    },
+    "themeCSS": ".edgeLabel rect { opacity: 1; } .cluster-label text, .node .label tspan:first-child { font-weight: 700; }"
+}}%%
+flowchart TB
+    LEA("Law enforcement users")
+    subgraph PLATFORM["MISP-LEA"]
+        direction LR
+        MISP("MISP<br/>Share intelligence") <--> AIL("AIL Project<br/>Search data lake")
+    end
+    LEA -->|Access| PLATFORM
+
+    classDef users fill:#102942,stroke:#102942,color:#ffffff
+    classDef service fill:#ffffff,stroke:#7795ad,stroke-width:1.5px,color:#182f45
+    class LEA users
+    class MISP,AIL service
+    style PLATFORM fill:#edf4fa,stroke:#9ab1c5,stroke-width:1.5px,color:#182f45
+</div>
+</figure>
 
 - **MISP** provides a dedicated platform for sharing threat intelligence with trusted communities.
 - **AIL Project** provides access to a large data lake spanning three years of Tor and I2P crawls, social network data, and other sources.

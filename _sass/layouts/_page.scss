@@ -40,6 +40,27 @@ h1.title {
   }
 }
 
+.infrastructure-diagram {
+  margin: 1.25rem 0;
+  padding-block: clamp(0.75rem, 3vw, 1.75rem);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: #fff;
+
+  .mermaid {
+    background: transparent;
+
+    > svg {
+      padding: 0;
+    }
+
+    .cluster > rect {
+      rx: 12px;
+      ry: 12px;
+    }
+  }
+}
+
 // Shared reading layout for site pages and articles.
 .reading-page {
   float: none;
