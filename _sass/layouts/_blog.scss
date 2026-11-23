@@ -10,7 +10,10 @@
 .home-hero-inner {
   @extend %site-frame;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
   min-height: 24rem;
   padding-block: clamp(2.75rem, 6vw, 4.5rem);
 
@@ -21,6 +24,13 @@
     letter-spacing: -0.035em;
     line-height: 1.06;
     text-wrap: balance;
+  }
+
+  p {
+    max-width: 42ch;
+    margin: 0;
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
+    line-height: 1.45;
   }
 }
 
