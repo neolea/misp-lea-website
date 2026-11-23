@@ -7,6 +7,14 @@ layout: default
         <div class="home-hero-inner">
             <h1>{{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>" }}</h1>
             {% if site.description %}<p>{{ site.description | escape }}</p>{% endif %}
+            <div class="home-project-logos">
+                <a href="https://www.misp-project.org/">
+                    <img src="{{ '/assets/img/misp-project-logo.png' | relative_url }}" alt="MISP Project" width="150" height="42">
+                </a>
+                <a href="https://www.ail-project.org/">
+                    <img src="{{ '/assets/img/ail-project-logo.png' | relative_url }}" alt="AIL Project" width="60" height="60">
+                </a>
+            </div>
         </div>
     </header>
 
