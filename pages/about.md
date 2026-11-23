@@ -7,7 +7,7 @@ feature-img: "assets/img/pexels/travel.jpeg"
 tags: [Page]
 ---
 
-MISP-LEA project started the first June 2023. It consists in an law enforcement agency information sharing community. It's powered by [MISP](https://www.misp-project.org/)[^1] and [AIL project](https://www.ail-project.org/)[^2], two leading open source projects led by [CIRCL](https://www.circl.lu/).
+MISP-LEA combines a hosted [MISP](https://www.misp-project.org/)[^1] instance for threat intelligence sharing with a hosted [AIL Project](https://www.ail-project.org/)[^2] instance for searching a large data lake. [CIRCL](https://www.circl.lu/) leads both open source projects. MISP-LEA launched on 1 June 2023 to build an information-sharing community for law enforcement agencies.
 
 # Background
 
@@ -17,7 +17,7 @@ MISP, the leading open source project for threat intelligence and information sh
 
 # Who is behind?
 
-CIRCL hosts the dedicated MISP instance for law enforcement agencies. The project will serve as ground for having an EU-based open source software stack for information sharing in law enforcement agencies. MISP-LEA provides an efficient open source tool along with the intelligence to support pre-investigation to enhance crime reporting. This project is carried out by [CIRCL](https://www.circl.lu/) and [SHADOWSERVER](https://www.shadowserver.org/). CIRCL is the coordinator.
+CIRCL hosts both instances for law enforcement agencies. The project will serve as ground for having an EU-based open source software stack for information sharing in law enforcement agencies. MISP-LEA provides an efficient open source tool along with the intelligence to support pre-investigation to enhance crime reporting. This project is carried out by [CIRCL](https://www.circl.lu/) and [SHADOWSERVER](https://www.shadowserver.org/). CIRCL is the coordinator.
 
 [![Shadowserver logo](/assets/img/logo-shadowserver.svg)](https://www.shadowserver.org/)
 [![CIRCL logo](/assets/img/circl-logo.png)](https://www.circl.lu/)

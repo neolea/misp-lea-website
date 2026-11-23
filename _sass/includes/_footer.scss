@@ -18,6 +18,19 @@
     padding: 0;
   }
 
+  .footer-github {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 0.75rem;
+    margin-block: 0.875rem;
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+  }
+
   .footer-icons ul {
     list-style: none;
     margin: 0;
