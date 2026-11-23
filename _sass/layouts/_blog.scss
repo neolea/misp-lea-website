@@ -34,6 +34,37 @@
   }
 }
 
+.home-project-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  a {
+    display: grid;
+    place-items: center;
+    width: 8.5rem;
+    min-height: 4.75rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    background: #fff;
+
+    &:hover {
+      background: #eaf2f8;
+    }
+
+    &:focus-visible {
+      outline-color: #fff;
+    }
+  }
+
+  img {
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .posts {
   @extend %site-frame;
   display: grid;
