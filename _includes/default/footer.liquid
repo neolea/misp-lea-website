@@ -1,5 +1,10 @@
 <footer class="site-footer">
     <p class="text">
+        {% if site.footer_copyright_start_year %}
+        {% assign copyright_start_year = site.footer_copyright_start_year | append: '' %}
+        {% assign copyright_end_year = site.time | date: '%Y' %}
+        Copyright {{ copyright_start_year }}{% if copyright_start_year < copyright_end_year %}–{{ copyright_end_year }}{% endif %} ·
+        {% endif %}
         {{ site.footer_text | default: "Powered by <a href='https://jekyllrb.com/'>Jekyll</a> with <a href='https://github.com/sylhare/Type-on-Strap'>Type on Strap</a>" }}</p>
             <div class="footer-icons">
                 <ul>

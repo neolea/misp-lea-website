@@ -12,8 +12,9 @@ favicon: assets/favicon.ico                             # Icon displayed in the 
 header_text: "Empowering Law Enforcement Agencies with MISP: Enhancing Information Sharing and Investigation"# Change Blog header text
 header_feature_image: assets/img/header/obs.jpg
 header_feature_image_responsive: true
+footer_copyright_start_year: 2023
 footer_text: >
-  Copyright 2023 - CIRCL Computer Incident Response Center Luxembourg <br/>
+  CIRCL Computer Incident Response Center Luxembourg <br/>
   <img style="width: 50%;max-height: 50%" src="/assets/img/eu_funded_en.jpg" alt="Cofunded by EU">
 
 # Blog
