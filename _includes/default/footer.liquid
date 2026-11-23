@@ -18,6 +18,9 @@
                 {% include social/icons.liquid %}
                 </ul>
             </div>
+    {% if site.footer_disclaimer %}
+    <small class="footer-disclaimer">{{ site.footer_disclaimer | escape }}</small>
+    {% endif %}
 </footer>
 
 

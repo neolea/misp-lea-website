@@ -43,4 +43,12 @@
       filter: brightness(0.85);
     }
   }
+
+  .footer-disclaimer {
+    display: block;
+    max-width: 42rem;
+    margin: 1rem auto 0;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
 }
