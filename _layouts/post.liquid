@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<article {% if page.feature-img or page.color %}class="feature-image" {% endif %}>
-  <header id="main" style="">
+<article class="reading-page{% if page.feature-img or page.color %} feature-image{% endif %}">
+  <header class="reading-header">
     <div class="title-padder">
       {% if page.hide_title %}
       <div class="feature-image-padding"></div>
@@ -46,12 +46,6 @@ layout: default
 
 <!-- To change color of links in the page -->
 <style>
-  header#main {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-  }
-
   {% if page.color %}
   .post-content a { color: {{ page.color }} !important; }
   .share-buttons a { color: {{ page.color }} !important; }
@@ -66,13 +60,13 @@ layout: default
     text-decoration: none;
     filter: none;
   }
-  header#main {
-      background-color: {{ page.color }} !important;
-      background-image: url('{{ site.color_image | relative_url }}');
+  .reading-header {
+      --page-color: {{ page.color }};
+      --page-image: url('{{ site.color_image | relative_url }}');
   }
   {% endif %}
 
   {% if page.feature-img %}
-  header#main { background-image: url('{{ page.feature-img | relative_url }}'); }
+  .reading-header { --page-image: url('{{ page.feature-img | relative_url }}'); }
   {% endif %}
 </style>

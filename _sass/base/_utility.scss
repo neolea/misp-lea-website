@@ -1,4 +1,10 @@
 // Mix-ins
+%site-frame {
+  width: calc(100% - 2 * clamp(1rem, 4vw, 3rem));
+  max-width: 72rem;
+  margin-inline: auto;
+}
+
 %padding-nav {
   padding: $padding-small $padding-x-large;
   @media (max-width: $xl-break) {
